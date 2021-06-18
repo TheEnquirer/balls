@@ -10,7 +10,8 @@ let mouseBounce = 1.1;
 let mouseX = 0;
 let mouseY = 0;
 //Ask user ball count
-let ballCount = window.prompt("Number of Balls: ");
+let ballCount = window.prompt("Number of Balls (negative for small balls): ");
+//let radius = window.prompt("Radius (suggested 2 for large, 30 for small)");
 //Define mouse location
 onmousemove = function(e){
   mouseX = e.clientX;
@@ -167,7 +168,7 @@ let ballArray = [];
 
 //Generate balls
 function ballGen(){
-  let radius = 2;
+  let radius = 30
   //If balls are negative, reduce radius and flip to positive
   if (ballCount < 0){
     ballCount = -ballCount;
