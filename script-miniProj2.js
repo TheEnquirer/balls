@@ -167,7 +167,7 @@ let ballArray = [];
 
 //Generate balls
 function ballGen(){
-  let radius = 30;
+  let radius = 2;
   //If balls are negative, reduce radius and flip to positive
   if (ballCount < 0){
     ballCount = -ballCount;
